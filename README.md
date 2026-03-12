@@ -53,13 +53,24 @@ This structure enables analytical queries such as:
 The `erd-diagrams` folder contains ER diagrams showing the database relationships and schema structure.
 
 ## Project Structure
+
+```
 aviaco-database-system
 │
 ├── data
+│   ├── dataForLucid.csv
+│   └── dataForLucid2.csv
+│
 ├── erd-diagrams
+│   ├── ERDafterCREW.png
+│   ├── LucidchartB4CREW.png
+│   ├── reverseEngineerERDiagram1.jpg
+│   └── reverseEngineerERDiagram2.png
+│
 ├── aviacoFull.sql
 ├── AviaCo_MySQL.txt
 └── README.md
+```
 
 
 ## Example Analytical Questions
