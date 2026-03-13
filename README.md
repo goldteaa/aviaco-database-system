@@ -58,6 +58,32 @@ The database structure ensures **data integrity, consistency, and efficient quer
 
 ---
 
+## Database Design
+
+### Final Entity-Relationship Diagram
+
+![Final ERD](images/final_erd.png)
+
+This diagram shows the final relational structure of the AVIACO database, including entities such as aircraft, charter flights, customers, and employees.
+
+---
+
+### Database Schema
+
+![Database Schema](images/database_schema.png)
+
+The schema illustrates table relationships and foreign key constraints used to maintain data integrity within the system.
+
+---
+
+### Initial Design Concept
+
+![Initial Design](images/initial_design.png)
+
+This diagram represents an earlier stage of the database design before the final schema was implemented.
+
+---
+
 ## Results
 
 The final system includes a structured relational database capable of storing operational aviation data and supporting analytical queries.
