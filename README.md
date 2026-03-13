@@ -1,87 +1,97 @@
-# aviaco-database-system
-Relational database and data warehouse system for an aircraft charter company built with MySQL, including ER modeling, SQL queries, and analytics.
+# AVIACO Database System
 
-# AviaCo Database System
+## Project Overview
 
-This project presents the design and implementation of a relational database and data warehouse system for an aircraft charter company using MySQL.
+This project implements a **relational database and data warehouse system** for an aircraft charter company.
 
-The system manages aircraft operations, employees, pilots, charter flights, and customers while enabling analytical reporting through a star schema data warehouse.
+The system was designed to store, manage, and analyze operational data related to aircraft operations, bookings, and company activities.
 
-## Technologies Used
+---
 
-- MySQL
-- SQL
-- Relational Database Design
-- ER Modeling
-- Data Warehousing (Star Schema)
-- Excel (Data Analysis)
+## Objective
 
-## Database Structure
+The goal of this project is to design a structured database system capable of handling operational and analytical data for an aviation company.
 
-The relational database includes the following main entities:
+The project demonstrates principles of:
 
-- Aircraft
-- Aircraft Model
-- Employees
-- Pilots
-- Customers
-- Charter Flights
-- Crew Assignments
+* Relational database design
+* Entity-Relationship modeling
+* SQL query development
+* Data warehousing concepts
 
-Primary and foreign key constraints enforce data integrity between tables.
+---
 
-## Data Warehouse
+## System Description
 
-A star schema was created to support business intelligence queries:
+The database models different aspects of the airline charter business, including:
 
-- **Fact Table**
-  - `charter_fact`
+* Aircraft information
+* Flight operations
+* Customer bookings
+* Company operational data
 
-- **Dimension Tables**
-  - `time_dim`
-  - `model`
-  - `employee`
+The system includes both **transactional data storage** and elements of **data warehouse analytics**.
 
-This structure enables analytical queries such as:
+---
 
-- Revenue by aircraft model
-- Revenue by month and year
-- Flight hours per pilot
+## Tools & Technologies
 
-## ER Diagrams
+* MySQL
+* SQL
+* Relational Database Design
+* ER Modeling
+* Data Warehouse Concepts
 
-The `erd-diagrams` folder contains ER diagrams showing the database relationships and schema structure.
+---
+
+## Methodology
+
+The database design process included:
+
+1. Requirement analysis
+2. Entity-Relationship (ER) modeling
+3. Schema design
+4. SQL query implementation
+5. Data analysis queries
+
+The database structure ensures **data integrity, consistency, and efficient query performance**.
+
+---
+
+## Results
+
+The final system includes a structured relational database capable of storing operational aviation data and supporting analytical queries.
+
+The project demonstrates how database systems can support business operations and decision-making.
+
+---
 
 ## Project Structure
 
 ```
 aviaco-database-system
 │
-├── data
-│   ├── dataForLucid.csv
-│   └── dataForLucid2.csv
-│
-├── erd-diagrams
-│   ├── ERDafterCREW.png
-│   ├── LucidchartB4CREW.png
-│   ├── reverseEngineerERDiagram1.jpg
-│   └── reverseEngineerERDiagram2.png
-│
-├── aviacoFull.sql
-├── AviaCo_MySQL.txt
+├── database_schema
+├── sql_queries
+├── documentation
 └── README.md
 ```
 
+---
 
-## Example Analytical Questions
+## How to Run
 
-The database allows analysis such as:
+1. Import the SQL schema into MySQL
 
-- Which aircraft model generates the most revenue?
-- Which pilots fly the most hours?
-- How does charter revenue vary by month?
+2. Execute the SQL scripts to create tables and relationships
 
-## Author
+3. Run analytical queries to explore the dataset
 
-A M  
-MSc Data Science & Business Analytics
+---
+
+## Future Improvements
+
+* Expand the data warehouse structure
+* Add more advanced analytical queries
+* Build a dashboard for operational analytics
+* Integrate with business intelligence tools
